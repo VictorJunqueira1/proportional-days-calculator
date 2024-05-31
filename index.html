@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dias Proporcionais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Dias Proporcionais</h1>
+
+        <div class="columns">
+            <div class="column-1">
+                <h2>Conta de Energia</h2>
+                <form id="energyForm">
+                    <div class="form-group">
+                        <label for="energyDays">Total de dias do período da conta:</label>
+                        <input type="number" id="energyDays" name="energyDays" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="energyStartDay">Dia de início da responsabilidade do inquilino:</label>
+                        <input type="number" id="energyStartDay" name="energyStartDay" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="energyEndDay">Dia de leitura da conta:</label>
+                        <input type="number" id="energyEndDay" name="energyEndDay" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="energyValue">Valor total da conta de energia:</label>
+                        <input type="number" id="energyValue" name="energyValue" step="0.01" required>
+                    </div>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div class="result">
+                    <h3>Resultado Conta de Energia</h3>
+                    <p><strong>Valor proporcional do inquilino:</strong> R$ <span id="energyTenantValue"></span></p>
+                    <p><strong>Valor proporcional do proprietário:</strong> R$ <span id="energyOwnerValue"></span></p>
+                </div>
+            </div>
+
+            <div class="column-2">
+                <h2>Conta de Água</h2>
+                <form id="waterForm">
+                    <div class="form-group">
+                        <label for="waterStartDay">Dia de início da responsabilidade do inquilino:</label>
+                        <input type="number" id="waterStartDay" name="waterStartDay" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="waterEndDay">Dia de leitura da conta:</label>
+                        <input type="number" id="waterEndDay" name="waterEndDay" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="waterValue">Valor total da conta de água:</label>
+                        <input type="number" id="waterValue" name="waterValue" step="0.01" required>
+                    </div>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div class="result">
+                    <h3>Resultado Conta de Água</h3>
+                    <p><strong>Valor proporcional do inquilino:</strong> R$ <span id="waterTenantValue"></span></p>
+                    <p><strong>Valor proporcional do proprietário:</strong> R$ <span id="waterOwnerValue"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
