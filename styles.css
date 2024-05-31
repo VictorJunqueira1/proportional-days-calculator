@@ -84,6 +84,34 @@ button:hover {
     margin: 5px 0;
 }
 
+.credit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.credit p {
+    margin: 0px;
+}
+
+.credit span {
+    font-weight: bold;
+}
+
+.credit a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+}
+
 @media (width < 442px) {
     .container {
         margin-top: 285px;
@@ -93,5 +121,11 @@ button:hover {
 @media (width < 390px) {
     .container {
         margin-top: 470px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        overflow-y: hidden;
     }
 }
