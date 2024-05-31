@@ -83,3 +83,15 @@ button:hover {
 .result p {
     margin: 5px 0;
 }
+
+@media (width < 442px) {
+    .container {
+        margin-top: 285px;
+    }
+}
+
+@media (width < 390px) {
+    .container {
+        margin-top: 470px;
+    }
+}
