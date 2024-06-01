@@ -21,4 +21,4 @@ Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou encon
 
 ## Licença
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Inovare Imóveis - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
