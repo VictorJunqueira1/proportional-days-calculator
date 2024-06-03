@@ -142,20 +142,60 @@ button:hover {
 
     .credit,
     .printerButton,
-    button {
-        display: none;
-    }
-
-    .hidden {
-        display: block;
-    }
-
+    button,
     .block {
         display: none;
     }
 
+    .hidden,
     .credit-inovare {
         display: block;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    input[type="number"],
+    input[type="date"],
+    button {
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .result p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .column-1,
+    .column-2 {
+        flex: none;
+        margin-bottom: 10px;
     }
 }
 
