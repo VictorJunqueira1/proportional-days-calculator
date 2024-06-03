@@ -11,8 +11,8 @@
 
 <body>
     <div class="container">
-        <h1>Calculadora de Dias Proporcionais</h1>
-
+        <h1 class="block">Calculadora de Dias Proporcionais</h1>
+        <h1 class="hidden">Cálculo de Dias Proporcionais</h1>
         <div class="columns">
             <div class="column-1">
                 <h2>Conta de Energia</h2>
@@ -41,7 +41,6 @@
                     <p><strong>Valor proporcional do proprietário:</strong> R$ <span id="energyOwnerValue"></span></p>
                 </div>
             </div>
-
             <div class="column-2">
                 <h2>Conta de Água</h2>
                 <form id="waterForm">
@@ -66,8 +65,22 @@
                 </div>
             </div>
         </div>
+        <div class="printerButton">
+            <button onclick="window.print()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-printer">
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                    <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+                    <rect x="6" y="14" width="12" height="8" rx="1" />
+                </svg>
+                <span>Imprimir</span>
+            </button>
+        </div>
         <div class="credit">
-            <p>Desenvolvido por <a href="https://www.linkedin.com/in/victor-junqueira-789004281/"><span> Victor Junqueira</span></a></p>
+            <p>Desenvolvido por <span>Victor Junqueira</span></a></p>
+        </div>
+        <div class="credit credit-inovare">
             <p>&copy; 2024 Inovare Imoveis. Todos os direitos reservados.</p>
         </div>
     </div>

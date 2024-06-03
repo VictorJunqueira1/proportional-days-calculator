@@ -103,13 +103,60 @@ button:hover {
     font-weight: bold;
 }
 
-.credit a {
+.credit span {
     text-decoration: none;
     color: inherit;
 }
 
-.credit a:hover {
+.credit span:hover {
     text-decoration: underline;
+}
+
+.printerButton {
+    display: flex;
+    background-color: #007bff;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+.printerButton:hover {
+    background: #0056b3;
+    transition: all ease-in-out 300ms;
+}
+
+.printerButton button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media print {
+
+    .credit,
+    .printerButton,
+    button {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .credit-inovare {
+        display: block;
+    }
 }
 
 @media (width < 442px) {
