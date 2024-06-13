@@ -31,3 +31,9 @@ document.getElementById('waterForm').addEventListener('submit', function (e) {
     document.getElementById('waterTenantValue').textContent = tenantValue.toFixed(2);
     document.getElementById('waterOwnerValue').textContent = ownerValue.toFixed(2);
 });
+
+let campo = document.getElementById('campo')
+
+campo.addEventListener("keypress", (event) => {
+    event.preventDefault()
+})
