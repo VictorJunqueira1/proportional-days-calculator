@@ -1,10 +1,11 @@
+// Formulário de energia
 document.getElementById('energyForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const energyDays = parseInt(document.getElementById('energyDays').value);
-    const energyStartDay = new Date(document.getElementById('energyStartDay').value);
-    const energyEndDay = new Date(document.getElementById('energyEndDay').value);
-    const energyValue = parseFloat(document.getElementById('energyValue').value);
+    const energyDays = parseInt(document.getElementById('totalDaysEnergy').value);
+    const energyStartDay = new Date(document.getElementById('startDateEnergy').value);
+    const energyEndDay = new Date(document.getElementById('readingDateEnergy').value);
+    const energyValue = parseFloat(document.getElementById('totalValueEnergy').value);
 
     const tenantDays = Math.ceil((energyEndDay - energyStartDay) / (1000 * 60 * 60 * 24)) + 1;
     const dailyValue = energyValue / energyDays;
@@ -15,13 +16,14 @@ document.getElementById('energyForm').addEventListener('submit', function (e) {
     document.getElementById('energyOwnerValue').textContent = ownerValue.toFixed(2);
 });
 
+// Formulário de água
 document.getElementById('waterForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const waterDays = 30; // Dias fixos para a conta de água
-    const waterStartDay = new Date(document.getElementById('waterStartDay').value);
-    const waterEndDay = new Date(document.getElementById('waterEndDay').value);
-    const waterValue = parseFloat(document.getElementById('waterValue').value);
+    const waterStartDay = new Date(document.getElementById('startDateWater').value);
+    const waterEndDay = new Date(document.getElementById('readingDateWater').value);
+    const waterValue = parseFloat(document.getElementById('totalValueWater').value);
 
     const tenantDays = Math.ceil((waterEndDay - waterStartDay) / (1000 * 60 * 60 * 24)) + 1;
     const dailyValue = waterValue / waterDays;
@@ -32,8 +34,10 @@ document.getElementById('waterForm').addEventListener('submit', function (e) {
     document.getElementById('waterOwnerValue').textContent = ownerValue.toFixed(2);
 });
 
-let campo = document.getElementById('campo')
+let campo = document.getElementById('campo');
 
-campo.addEventListener("keypress", (event) => {
-    event.preventDefault()
-})
+if (campo) {
+    campo.addEventListener("keypress", (event) => {
+        event.preventDefault();
+    });
+}

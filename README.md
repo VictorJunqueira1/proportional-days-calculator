@@ -15,10 +15,6 @@ Este projeto foi desenvolvido para automatizar o cálculo proporcional de contas
 - Linguagem de Estilização: CSS
 - Linguagem de Programação: JavaScript
 
-## Contribuições
-
-Contribuições são bem-vindas! Se você tiver sugestões de melhorias ou encontrar bugs, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
 ## Licença
 
 Este projeto está licenciado sob a Inovare Imóveis - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
